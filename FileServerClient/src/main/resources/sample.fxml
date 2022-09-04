@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.java.client.Controller">
+
+    <Label fx:id="welcomeText" text="Авторизация" />
+    <TextArea fx:id="login" promptText="Логин" maxWidth="200" maxHeight="15"/>
+    <TextArea fx:id="password" promptText="Пароль" maxWidth="200" maxHeight="15"/>
+
+    <HBox alignment="CENTER" spacing="5">
+        <Button text="Войти" onAction="#toCome"/>
+        <Button text="Закрыть" onAction="#Exit"/>
+    </HBox>
+
+
+
+</VBox>
+
+

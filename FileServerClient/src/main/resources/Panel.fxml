@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.java.client.ControllerWindowFileServer">
+
+    <HBox  spacing="5">
+        <Button text="КОПИРОВАТЬ" focusTraversable="false" prefHeight="42.0" prefWidth="198.0" onAction="#CopyButton"/>
+        <Button text="УДАЛИТЬ" focusTraversable="false" prefHeight="42.0" prefWidth="198.0" onAction="#DeleteButton"/>
+        <padding>
+            <Insets top="20" bottom="10" left="10" />
+        </padding>
+    </HBox>
+
+    <HBox spacing="5" VBox.vgrow="ALWAYS">
+        <fx:include fx:id="PanelClient1" source="PanelClient.fxml" HBox.hgrow="ALWAYS"  />
+        <fx:include fx:id="PanelServer1" source="PanelServer.fxml" HBox.hgrow="ALWAYS"  />
+
+        <padding>
+            <Insets  bottom="10" left="10" right="10"/>
+        </padding>
+    </HBox>
+
+    <Button alignment="CENTER" contentDisplay="TOP" prefHeight="32.0" prefWidth="87.0" text="ВЫХОД">
+        <VBox.margin>
+            <Insets left="1080.0" />
+        </VBox.margin></Button>
+
+    <padding>
+        <Insets  bottom="10" />
+    </padding>
+
+</VBox>
+
+
